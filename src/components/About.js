@@ -6,22 +6,6 @@ export default function About() {
         color: 'black',
         backgroundColor: 'white'
     })
-    const changetheme = () => {
-        if (theme.color === 'white') {
-            settheme({
-                color: 'black',
-                backgroundColor: 'white'
-            })
-            setval('Dark theme')
-        }
-        else {
-            settheme({
-                color: 'white',
-                backgroundColor: 'black'
-            })
-            setval('light theme')
-        }
-    }
     
     return (
         <div style={theme} >
@@ -70,10 +54,6 @@ export default function About() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="htmlForm-check form-switch mr-3 my-3" >
-                <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={changetheme} />
-                <label className="form-check-label " htmlFor="flexSwitchCheckDefault">{btnval}</label>
             </div>
         </div>
     )
